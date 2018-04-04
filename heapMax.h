@@ -1,3 +1,5 @@
+#ifndef MESSAGE_H
+#define MESSAGE_H
 #pragma once
 #include <iostream>
 #include <cstdio>
@@ -48,4 +50,4 @@ public:
 
 	~HeapMax();		//destructor
 };
-
+#endif // MESSAGE_H
