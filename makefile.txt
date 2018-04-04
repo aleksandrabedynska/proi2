@@ -1,0 +1,14 @@
+CC=g++
+CFLAGS=-c -Wall
+
+output: main.o heapMax.o
+	$(CC) main.o heapMax.o -o output
+
+main.o: main.cpp
+	$(CC) $(CFLAGS) main.cpp
+
+heapMax.o: heapMax.cpp heapMax.h
+	$(CC) $(CFLAGS) heapMax.cpp
+
+clean: 
+	rm *.o output
